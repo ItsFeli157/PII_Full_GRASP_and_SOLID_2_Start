@@ -24,7 +24,11 @@ namespace Full_GRASP_And_SOLID.Library
         {
             this.steps.Remove(step);
         }
-
+        public ArrayList GetSteps() // devuelve la lista de pasos que componen la receta.
+        {
+            return steps;
+        }
+        
         public void PrintRecipe()
         {
             Console.WriteLine($"Receta de {this.FinalProduct.Description}:");
